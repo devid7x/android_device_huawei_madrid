@@ -1,1 +1,1 @@
-# device_xiaomi_cactus
+# device_huawei_madrid
