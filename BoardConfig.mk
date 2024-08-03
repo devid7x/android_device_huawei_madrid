@@ -17,6 +17,8 @@
 DEVICE_PATH := device/huawei/madrid
 ALLOW_MISSING_DEPENDENCIES=true
 
+
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -40,6 +42,7 @@ BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 product.type=normal androidboot.s
 BOARD_KERNEL_CMDLINE += androidboot.super_partition=system
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x11a88000 --second_offset 0x00e88000 --tags_offset 0x07808000 --header_version 1
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/(kernel name)
 
 # Resolution
 TARGET_SCREEN_WIDTH := 720
