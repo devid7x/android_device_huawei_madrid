@@ -3,6 +3,10 @@ import /init.recovery.decrypt.rc
 on early-init
     mount debugfs debugfs /sys/kernel/debug mode=0755
 
+on init
+    setprop sys.usb.ffs.aio_compat 1
+    setprop sys.usb.configfs 1
+
 on fs
     export ANDROID_ROOT /system_root
 
