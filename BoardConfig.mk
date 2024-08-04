@@ -63,6 +63,7 @@ TARGET_NO_BOOTLOADER := true
 PLATFORM_SDK_VERSION = 28
 
 # TWRP
+TW_THEME := portrait_hdpi
 TW_DEVICE_VERSION := $(shell date -u +"%Y%m%d")
 TW_NO_SCREEN_BLANK := true
 TW_EXCLUDE_SUPERSU := true
